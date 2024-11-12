@@ -1,5 +1,6 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+
 /*Asterix wilcard selector to override default styles added by the browser*/
 * {
     padding: 0;
@@ -12,10 +13,11 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
- /*Generic Project Styles*/  
+    /*Generic Project Styles*/
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
 }
+
 /*Header*/
 header {
     background-color: #ffffff;
@@ -25,10 +27,12 @@ header {
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
 }
+
 header a {
     text-decoration: none;
     color: inherit;
 }
+
 /*Main Content*/
 main {
     background-color: lightblue;
@@ -46,19 +50,33 @@ footer {
 // <weight>: Use a value from 200 to 700*/
 
 .oswald-one {
-  font-family: "Oswald", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
+
 .lato-light {
     font-family: "Lato", serif;
     font-weight: 300;
     font-style: normal;
 }
+
 h1 {
-font-family: 'Oswald', sans serif;
-text-transform:uppercase;
-letter-spacing: 2px;
-color: #252525;
+    font-family: 'Oswald', sans serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+}
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+menu > li {
+    margin-bottom: 1em;
+}
+.active {
+    border-bottom: 1px solid #3a3a3a;
 }
