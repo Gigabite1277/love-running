@@ -44,10 +44,20 @@ main {
 }
 
 /*Footer*/
-footer {
-    background-color: orange;
-    /*make main element take up any surplus space forcing the Footer to the bottom of the page-screen*/
+#social-networks {
+    text-align: center
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
 }
+
+#social-networks i {
+ font-size:160%;
+ padding: 5%;
+ color: #3a3a3a
+ 
+ }
 
 /*// <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 200 to 700*/
