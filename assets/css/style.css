@@ -41,8 +41,14 @@ main {
     background-color: lightblue;
     /*Make main element take up any surplus space to push footer down*/
     flex: 1 0 auto;
+    margin-top: 47px
 }
-
+/*Hero Section*/
+#hero {
+    height: 880px;
+    width: 100%;
+    background-color: lightgreen;
+}
 /*Footer*/
 #social-networks {
     text-align: center
