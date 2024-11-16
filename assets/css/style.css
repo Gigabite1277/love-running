@@ -167,3 +167,24 @@ nav {
     width:300px;
     right: 50px;
 }
+#reasons  {
+  margin: 20px auto;
+  width: 90%;
+}
+#reasons h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 280%;
+}
+hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px;
+}
+#benefits-physical>div,
+#benefits-mental>div {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+#benefits p {
+    padding: 0 20px;
+}
