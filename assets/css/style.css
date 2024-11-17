@@ -167,6 +167,23 @@ nav {
     width:300px;
     right: 50px;
 }
+/*Reasons Section*/
+#benefits-physical,
+#beefits-mental {
+    display: flex;
+    flex-direction: coloumn;
+    width: 100%;
+}
+#benefits-physical > div,
+#benefits-mental> div {
+    width: 75%;
+}
+
+#benefits-mental> div {
+    text-align:end;
+    align-self: flex-end;
+}
+
 #reasons  {
   margin: 20px auto;
   width: 90%;
@@ -197,7 +214,12 @@ hr {
     border-radius:50%;
     max-height: 300px;
     max-width: 300px;
-  
+  }
+
+#benefits-image {
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
     
     
