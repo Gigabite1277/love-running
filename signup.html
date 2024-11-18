@@ -34,8 +34,42 @@
             </ul>
         </nav>
     </header>
-    <main>Main Content
-        <!--h1 class="lato-light">TEST TEXT FOR NEW FONTS</h1-->
+    <main>
+        
+        <section id="signup">
+            <!--Sign Up Form-->
+            <h2>LET'S GET YOU SIGNED UP<i class="fa-solid fa-heart-pulse"></i></h2>
+            <form id="signup-form" method="POST" action="https://formdump.codeinstitute.net">
+              <div>
+                <label for="first-name">First Name</label>
+                <input type="text" name="first_name" id="first-name" class="text-input" required>
+                <br>
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last_name" id="last-name" class="text-input" required>
+                <br>
+                <label for="email-address">Email Address</label>
+                <input type="email" name="email_address" id="email-address" class="text-input" required>
+                <br>
+            </form>
+        </div>
+        <div class="radio-buttons">
+            <div>
+                <label for="road">Road</label>
+                <input type="radio" name="running_preference" id="road" value="road" required checked>
+            </div>
+            <div>
+                <label for="trail">Trail</label>
+                <input type="radio" name="running_preference" id="trail" value="trail" required checked>
+            </div>
+            <div>
+                <label for="both">Both</label>
+                <input type="radio" name="running_preference" id="both" value="both" required checked>
+            </div>
+        </div>
+        <div>
+             <button type="submit" class="join-button">Let's Run!</button>        
+        </div>
+        </section>
     </main>
     <footer>
         <ul id="social-networks">
