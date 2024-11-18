@@ -139,6 +139,15 @@ nav {
 .nav-toggle-label {
         font-size: 2rem;
     }
+
+    /*Media query: Large or landscape phones (576px and up) */
+@media screen and (min-width:576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
 /*Media query: tablets and larger (768px and upwards)*/
 @media screen and (min-width: 786px) {
     nav { 
@@ -161,6 +170,11 @@ nav {
 #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }   
+    /*Gallery*/
+#photos {
+    column-count:4;
+
+}
 }
 /*cover-text*/
 #cover-text {
@@ -184,10 +198,12 @@ nav {
     align-self: flex-end;
 }
 
+
 #reasons  {
   margin: 20px auto;
   width: 90%;
 }
+
 #reasons h2 {
     margin-bottom: 20px;
     text-align: center;
