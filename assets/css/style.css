@@ -48,8 +48,9 @@ main {
     
     /*Make main element take up any surplus space to push footer down*/
     flex: 1 0 auto;
+    flex-direction: column;
     margin-top: 47px
-}
+    }
 /*Hero Section*/
 #hero {
     height: 600px;
@@ -290,4 +291,22 @@ color: #fafafa;
 }
 #photos {
         line-height: 0;
+}
+#signup {
+        background-size: cover;
+        background-position: 75%;
+        flex-grow: 1;
+        padding: 20px 30px;
+}
+
+#signup-form {
+        color: #ffffff;
+        background-color: rgba(60, 60, 60, 0.6);
+        border: 30px;
+}
+
+#signup-form h2 {
+    color:#ffffff;
+        
+
 }
