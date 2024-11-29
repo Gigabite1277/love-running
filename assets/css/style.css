@@ -44,18 +44,20 @@ header a {
 }
 
 /*Main Content*/
-main {
-    
-    /*Make main element take up any surplus space to push footer down*/
+main main {
+    /* Enlarge main element to push footer down*/
     flex: 1 0 auto;
+    /* Add margin at the top to prevent content from being covered by the header */
+    margin-top: 47px;
+    /* Enable flex properties for child elements */
+    display: flex;
     flex-direction: column;
-    margin-top: 47px
-    }
+}
 /*Hero Section*/
 #hero {
     height: 600px;
     width: 100%;
-    background: url("../images/hero-image.webp") no-repeat center center/cover;
+    background: url("../images/hero-image.webp")no-repeat center / cover;
     position:relative;
     
 }
@@ -71,7 +73,7 @@ main {
     padding-left: 10px;
 }
 
-#cover-text > h2, #cover-text > h3 {
+#cover-text>h2, #cover-text>h3 {
      color: #ffffff;       
 }
 /*Footer*/
@@ -113,7 +115,7 @@ main {
     letter-spacing: 4px;
     list-style-type: none;
 }
-menu > li {
+menu>li {
     margin-bottom: 1em;
 }
 .active {
@@ -189,12 +191,12 @@ nav {
     flex-direction: coloumn;
     width: 100%;
 }
-#benefits-physical > div,
-#benefits-mental> div {
+#benefits-physical>div,
+#benefits-mental>div {
     width: 75%;
 }
 
-#benefits-mental> div {
+#benefits-mental>div {
     text-align:end;
     align-self: flex-end;
 }
@@ -205,7 +207,7 @@ nav {
   width: 90%;
 }
 
-#reasons h2 {
+#reasons>h2 {
     margin-bottom: 20px;
     text-align: center;
     font-size: 280%;
@@ -244,7 +246,7 @@ hr {
         display: flex;
         flex-direction: row;
     }
-#benefits > div {
+#benefits>div {
     flex: 1;
 }
 #benefits-image {
@@ -255,12 +257,30 @@ hr {
     order: 1;
     }
 
-#benefits-mental > div {
+#benefits-mental>div {
     align-self: flex-start;
 }
- #benefits-physical > div {
+ #benefits-physical>div {
     align-self: flex-end;
  }
+ #signup {
+    background-position: center;
+    position: relative;
+}
+#signup-form {
+    max-width: 400px;
+    position: absolute;
+    left: 10%;
+    top: 150px;
+}
+.text-input:hover {
+    border-color: #f16c6b;
+}
+
+.join-button:hover {
+    background-color: #fafafa;
+    color: #454b1b;
+}
 }
 #times {
     background: url('../images/dublin-city.webp') no-repeat center / cover;
@@ -292,11 +312,14 @@ color: #fafafa;
 #photos {
         line-height: 0;
 }
+
+/*The Sign Up Page*/
 #signup {
+        background: url('../images/signup-image.webp');
         background-size: cover;
         background-position: 75%;
         flex-grow: 1;
-        padding: 20px 30px;
+        padding: 20px 10% 0 10%;
 }
 
 #signup-form {
@@ -305,8 +328,32 @@ color: #fafafa;
         border: 30px;
 }
 
-#signup-form h2 {
+#signup-form>h2 {
     color:#ffffff;
-        
-
+    margin-bottom: 20px;
 }
+.text-input {
+    background: transparent;
+    color: #fafafa; 
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;   
+    padding: 0 5px;
+}
+.radio-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.join-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 15px 32px;
+    font-size: 100%;
+    background-color: #454b1b;
+    color: #fafafa;
+}
+
